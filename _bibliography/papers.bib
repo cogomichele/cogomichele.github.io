@@ -3,6 +3,37 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{DEVANNA2023108717,
+title = {URANOS: A GPU accelerated Navier-Stokes solver for compressible wall-bounded flows},
+journal = {Computer Physics Communications},
+volume = {287},
+pages = {108717},
+year = {2023},
+abbr={CPC},
+issn = {0010-4655},
+doi = {https://doi.org/10.1016/j.cpc.2023.108717},
+url = {https://www.sciencedirect.com/science/article/pii/S0010465523000620},
+author = {Francesco {De Vanna} and Filippo Avanzi and Michele Cogo and Simone Sandrin and Matt Bettencourt and Francesco Picano and Ernesto Benini},
+keywords = {GPU, OpenACC, Compressible flows, DNS, LES, WMLES, Open-source},
+abstract = {URANOS, a massively parallel GPU-accelerated compressible flow solver for high-fidelity modeling of compressible wall flows, is presented. URANOS is based on modern high-fidelity and high-resolution discretization strategies for time-accurate compressible flow predictions. The solver provides six different convective scheme implementations, a cutting-edge method for viscous terms treatment, and three different frameworks for turbulence modeling (DNS, LES, and innovative WMLES), while utilizing a high-order finite-difference approach, ranging from second to sixth order spatial accuracy. This paper details all of these numerical models and implementation issues. Computationally, URANOS combines multiple three-dimensional MPI parallelization strategies with the open standard, OpenACC, for machine wide, on node, and on GPU parallelism, tailoring the software to match the state-of-the-art HPC computing facilities. Special attention is given to the GPU porting and data management, detailing the solver scaling properties and performance for multi-node/-GPU systems on three distinct architectures. In these experiments the different MPI strategies are compared for both GPU-aware MPI/GPU (Host-based MPI) and results are provided proving, consistently, that the GPU-aware MPI outperforms the GPU (Host-based MPI) approach. Furthermore, the GPU version is compared to the CPU only demonstrating over three times speed-up for a node-to-node comparison, even at large scales, with an efficiency of about 80% while using 1024 GPUs. Finally, the manuscript presents several validation benchmarks, from simple academic comparisons to turbulent channel and boundary layer configurations. URANOS is compared with the best DNS data available in the literature across various Mach numbers, ranging from almost incompressible conditions to hypersonic regimes, illustrating the solver's capability in treating a wide range of complex wall-flows problems using DNS, wall-resolved, and wall-modeled LES approaches. Thus, using OpenACC as a paradigm, URANOS provides a straightforward and efficient platform that can efficiently exploit the most modern GPU-accelerated computing architectures in a totally open-source and non-vendor-specific way. The solver represents a framework where the CFD community can explore the limits of modeling, test new models/methods all across a broad range of Mach and Reynolds numbers flows. The solver is released under a BSD license.
+Program summary
+Program title: Unsteady Robust All-around Navier-StOkes Solver (URANOS) CPC Library link to program files: https://doi.org/10.17632/pw5hshn9k6.1 Developer's repository link: https://gitlab.com/fralusa/uranos_gpu Licensing provisions: BSD License 2.0 Programming language: Fortran 90, OpenACC, MPI Nature of problem: Solving the compressible Navier-Stokes system of equations in a three-dimensional Cartesian framework from low to high Mach and Reynolds numbers conditions. Solution method: Convective terms are treated with several high-order high-resolution shock-capturing schemes (WENO/TENO) in hybrid and non-hybrid versions. The system dynamics is advanced in time with a three-stage, third-order total variation diminishing Runge-Kutta method. Three-dimensional MPI parallelization is implemented in several optimized arrangements and coupling OpenACC directives in a genuinely multi-GPU logic.}
+}
+
+@article{PLACCO2023108709,
+title = {Large-Eddy Simulation of the unsteady supersonic flow around a Mars entry capsule at different angles of attack},
+journal = {Aerospace Science and Technology},
+volume = {143},
+pages = {108709},
+year = {2023},
+issn = {1270-9638},
+DOI = {https://doi.org/10.1016/j.ast.2023.108709},
+url = {https://www.sciencedirect.com/science/article/pii/S1270963823006053},
+author = {Luca Placco and Michele Cogo and Matteo Bernardini and Alessio Aboudan and Francesca Ferri and Francesco Picano},
+keywords = {Large Eddy Simulation, Entry capsule, Unsteady, Supersonic flows, Modal analysis},
+abstract = {Time-evolving high-fidelity simulations of an entry capsule in a supersonic flight regime have been performed at different angles of attack (0∘,5∘,10∘ and 15∘) in Mars' atmosphere. The aim is to contribute to the understanding of the critical unsteady phenomena that arise during the descent phase, gaining insights on the optimal design choices to ensure a safe atmospheric entry and a successful landing procedure. Turbulent structures effectively solved via Implicit Large-Eddy Simulation technique allow us to evaluate the flow properties and the capsule's response both in space and time, placing special attention to the analysis of the turbulent motions responsible for the oscillatory and unsteady dynamics. Ultimately, Proper Orthogonal Decomposition is employed to provide a low-order model of the wake dynamics.}
+}
+
 @article{cogo_2023, title={Assessment of heat transfer and Mach number effects on high-speed turbulent boundary layers}, 
   abbr={JFM},
   volume={974}, DOI={10.1017/jfm.2023.791}, journal={Journal of Fluid Mechanics}, publisher={Cambridge University Press}, author={Cogo, Michele and Baù, Umberto and Chinappi, Mauro and Bernardini, Matteo and Picano, Francesco}, year={2023}, pages={A10}}
@@ -34,4 +65,6 @@
   url={https://doi.org/10.1103/PhysRevFluids.6.034614},
   html={https://journals.aps.org/prfluids/abstract/10.1103/PhysRevFluids.6.034614},
 }
+
+
 
