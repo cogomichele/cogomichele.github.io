@@ -37,15 +37,10 @@
     {
       "institution": "Università degli Studi di Padova",
       "url": "https://research.dii.unipd.it/flums/",
-      "area": "Computational Fluid Dynamics",
+      "area": "Computational Fluid Dynamics for high-speed turbulent flows",
       "studyType": "PhD",
       "startDate": "2021-10-01",
-      "endDate": "Present",
-      "score": "",
-      "courses": [
-        ""
-      ]
-    }
+      "endDate": "Present"
   ],
   "awards": [
     {
