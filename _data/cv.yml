@@ -2,96 +2,91 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Michele Cogo
+    - name: Position
+      value: Assistant Professor of Fluid Dynamics (RTD-A), University of Padova
+    - name: Affiliation
+      value: Department of Industrial Engineering, FLUMS group
+    - name: Email
+      value: michele.cogo@unipd.it
+    - name: ORCID
+      value: <a href="https://orcid.org/0000-0003-1668-8295">0000-0003-1668-8295</a>
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: PhD in Sciences, Technologies and Measurements for Space
+      institution: Università degli Studi di Padova, CISAS
+      year: 2021 - 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - "Thesis: <em>High-fidelity simulations of high speed flows for aerospace problems</em> — graduated with honours."
+        - "Supervisor: Prof. Francesco Picano."
+        - Curriculum in Sciences and Technologies for Aeronautics and Satellite Applications (STASA).
+    - title: MSc in Aerospace Engineering
+      institution: Università degli Studi di Padova
+      year: 2018 - 2020
       description:
-        - Description 1.
-        - Description 2.
+        - "Thesis: <em>Large-eddy simulation with wall-stress model: application to turbulent compressible channel flow</em>."
+        - "Final grade: 110/110 cum laude — Excellence award from the graduation committee."
+        - "Supervisor: Prof. Francesco Picano."
+    - title: BSc in Aerospace Engineering
+      institution: Università degli Studi di Padova
+      year: 2015 - 2018
+      description:
+        - "Thesis: <em>Dynamics of a sphere in high-Reynolds-number flows</em>."
+        - "Supervisor: Prof. Francesco Picano."
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Assistant Professor (Fixed-term, RTD-A)
+      institution: Università degli Studi di Padova, Department of Industrial Engineering
+      year: 2026 - now
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Assistant Professor of Fluid Dynamics in the FLUMS group.
+        - Teaching responsibilities for Advanced Aerodynamics and Laboratory of Computational Fluid Mechanics, MSc in Aerospace Engineering.
+    - title: Research Fellow
+      institution: Sapienza Università di Roma, Department of Mechanical and Aerospace Engineering
+      year: 2024 - 2026
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Accelerated aerodynamic simulations using GPU-based solvers.
+        - "Project: High Performance Computing, Big Data and Quantum Computing (ICSC), funded by the European Union — NextGenerationEU."
+        - "Scientific coordinator: Prof. Matteo Bernardini."
+    - title: Adjunct Professor
+      institution: Università degli Studi di Padova, Department of Industrial Engineering
+      year: 2025 - 2026
       description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+        - Lecturer for a 24-hour module (3 ECTS) within the Advanced Aerodynamics course, MSc in Aerospace Engineering.
+    - title: Fulbright Scholar
+      institution: Stanford University, Center for Turbulence Research
+      year: 2023
+      description:
+        - Developed wall models for hypersonic turbulent boundary layers with chemical reactions.
+        - "Host supervisor: Prof. Parviz Moin."
+    - title: Visiting Student Researcher
+      institution: Delft University of Technology, Department of Flow Physics and Technology
+      year: 2022 - 2023
+      description:
+        - High-fidelity simulations of compressible boundary layers over rough surfaces.
+        - "Host supervisor: Prof. Davide Modesti."
+    - title: Research Scholarship
+      institution: Sapienza Università di Roma, Department of Mechanical and Aerospace Engineering
+      year: 2020 - 2021
+      description:
+        - Direct numerical simulation of compressible turbulent boundary layers.
+        - "Supervisor: Prof. Matteo Bernardini."
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+    - year: 2026
       items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+        - CTR Summer Program Grant (Principal Investigator), Center for Turbulence Research, Stanford University — project "Dynamics of hypersonic turbulent boundary layers over ablated-like surfaces"
+    - year: 2025
+      items:
+        - Best presentation in fluid dynamics, 28th AIDAA International Congress, Turin
+    - year: 2023
+      items:
+        - Fulbright Scholarship, U.S.-Italy Fulbright Commission
+        - Zegna Founder's Scholarship, Ermenegildo Zegna Group
+        - Franklin P. and Caroline M. Johnson Fellowship, School of Engineering, Stanford University

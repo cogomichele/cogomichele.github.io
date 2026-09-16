@@ -41,34 +41,6 @@ layout: default
             {{ content }}
           </div>
 
-          <!-- Example of where to place the PDF link within the about.html layout -->
-
-    <!-- Insert the PDF link here -->
-    <div class="research-pdf">
-      <h2>A Glimpse of My Research</h2>
-      <p>
-        You can view the PDF by clicking this link:
-        <a href="{{ 'assets/pdf/a_glimpse_of_my_research.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">
-          <strong>A Glimpse of My Research</strong>
-        </a>
-      </p>
-    </div>
-  </article>
-</div>
-
-    <!-- Insert the PDF link here -->
-    <div class="research-pdf">
-      <h2>My PhD thesis</h2>
-      <p>
-        You can view the PDF by clicking this link:
-        <a href="{{ 'assets/pdf/PhD_thesis_Cogo.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">
-          <strong>My PhD thesis</strong>
-        </a>
-      </p>
-    </div>
-  </article>
-</div>
-
           <!-- News -->
           {% if page.news and site.announcements.enabled -%}
             <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>

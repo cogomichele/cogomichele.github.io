@@ -3,6 +3,65 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{cogo2026reynolds,
+  abbr={JFM},
+  title={On the Reynolds analogy for high-speed rough-wall flows: implications for wall modelling},
+  author={Cogo, Michele and Depieri, Davide and Bernardini, Matteo and Picano, Francesco},
+  journal={Journal of Fluid Mechanics},
+  volume={1039},
+  pages={A34},
+  year={2026},
+  DOI={10.1017/jfm.2026.11842},
+  url={https://doi.org/10.1017/jfm.2026.11842},
+  publisher={Cambridge University Press},
+  selected={true},
+  code={https://github.com/cogomichele/cogo2026-wall-model},
+  keywords={compressible boundary layers, turbulent boundary layers, supersonic flow},
+  abstract={We investigate compressible turbulent boundary layers over prism-shaped roughness using direct numerical simulations at Mach 2 and 4, with adiabatic and isothermal walls. Analysis of instantaneous and mean-density fields shows that compressibility effects and wall-thermal conditions significantly influence the boundary-layer structure, although the roughness elements remain submerged within the subsonic layer. While roughness disrupts near-wall momentum–energy coupling within the roughness sublayer, the Reynolds analogy recovers in the outer region where velocity and temperature fields exhibit smooth-wall-like similarity. A systematic comparison of different formulations indicates that a mixed Prandtl number approach provides the most accurate heat-flux predictions among the tested closures. Based on these observations, we develop a wall model that couples drag prediction for small prism-shaped roughness patterns with a compressibility transformation and a temperature–velocity closure. The formulation is modular, allowing the straightforward incorporation of alternative closures and traditional correlations. The model predicts both wall-shear stress and heat flux using only roughness geometry and information from the matching location, and shows good a priori agreement with the present direct numerical simulation data.}
+}
+
+@article{cogo2025prism,
+  abbr={JFM},
+  title={Development of supersonic turbulent boundary layers over prism-shaped rough surfaces},
+  author={Cogo, Michele and Modesti, Davide and Picano, Francesco and Bernardini, Matteo},
+  journal={Journal of Fluid Mechanics},
+  volume={1025},
+  pages={A21},
+  year={2025},
+  DOI={10.1017/jfm.2025.10935},
+  url={https://doi.org/10.1017/jfm.2025.10935},
+  publisher={Cambridge University Press},
+  selected={true},
+  keywords={DNS, supersonic, rough walls, turbulent boundary layer},
+}
+
+@article{cogo2025roughness,
+  abbr={JFM},
+  title={Surface roughness effects on subsonic and supersonic turbulent boundary layers},
+  author={Cogo, Michele and Modesti, Davide and Bernardini, Matteo and Picano, Francesco},
+  journal={Journal of Fluid Mechanics},
+  volume={1009},
+  pages={A56},
+  year={2025},
+  DOI={10.1017/jfm.2024.1232},
+  url={https://doi.org/10.1017/jfm.2024.1232},
+  publisher={Cambridge University Press},
+  selected={true},
+  keywords={DNS, roughness, compressibility, turbulent boundary layer},
+}
+
+@inproceedings{cogo2024compressibility,
+  abbr={MRP},
+  title={Compressibility and wall-cooling effects on high-speed turbulent boundary layers},
+  author={Cogo, Michele and Chinappi, Mauro and Bernardini, Matteo and Picano, Francesco},
+  booktitle={Materials Research Proceedings (IV Aerospace PhD-Days)},
+  volume={42},
+  pages={14--17},
+  year={2024},
+  DOI={10.21741/9781644903193-4},
+  url={https://doi.org/10.21741/9781644903193-4},
+}
+
 @article{DEVANNA2023108717,
 title = {URANOS: A GPU accelerated Navier-Stokes solver for compressible wall-bounded flows},
 journal = {Computer Physics Communications},
@@ -15,6 +74,7 @@ DOI = {https://doi.org/10.1016/j.cpc.2023.108717},
 url = {https://www.sciencedirect.com/science/article/pii/S0010465523000620},
 author = {Francesco {De Vanna} and Filippo Avanzi and Michele Cogo and Simone Sandrin and Matt Bettencourt and Francesco Picano and Ernesto Benini},
 keywords = {GPU, OpenACC, Compressible flows, DNS, LES, WMLES, Open-source},
+selected={true},
 abstract = {URANOS, a massively parallel GPU-accelerated compressible flow solver for high-fidelity modeling of compressible wall flows, is presented. URANOS is based on modern high-fidelity and high-resolution discretization strategies for time-accurate compressible flow predictions. The solver provides six different convective scheme implementations, a cutting-edge method for viscous terms treatment, and three different frameworks for turbulence modeling (DNS, LES, and innovative WMLES), while utilizing a high-order finite-difference approach, ranging from second to sixth order spatial accuracy. This paper details all of these numerical models and implementation issues. Computationally, URANOS combines multiple three-dimensional MPI parallelization strategies with the open standard, OpenACC, for machine wide, on node, and on GPU parallelism, tailoring the software to match the state-of-the-art HPC computing facilities. Special attention is given to the GPU porting and data management, detailing the solver scaling properties and performance for multi-node/-GPU systems on three distinct architectures. In these experiments the different MPI strategies are compared for both GPU-aware MPI/GPU (Host-based MPI) and results are provided proving, consistently, that the GPU-aware MPI outperforms the GPU (Host-based MPI) approach. Furthermore, the GPU version is compared to the CPU only demonstrating over three times speed-up for a node-to-node comparison, even at large scales, with an efficiency of about 80% while using 1024 GPUs. Finally, the manuscript presents several validation benchmarks, from simple academic comparisons to turbulent channel and boundary layer configurations. URANOS is compared with the best DNS data available in the literature across various Mach numbers, ranging from almost incompressible conditions to hypersonic regimes, illustrating the solver's capability in treating a wide range of complex wall-flows problems using DNS, wall-resolved, and wall-modeled LES approaches. Thus, using OpenACC as a paradigm, URANOS provides a straightforward and efficient platform that can efficiently exploit the most modern GPU-accelerated computing architectures in a totally open-source and non-vendor-specific way. The solver represents a framework where the CFD community can explore the limits of modeling, test new models/methods all across a broad range of Mach and Reynolds numbers flows. The solver is released under a BSD license.
 Program summary
 Program title: Unsteady Robust All-around Navier-StOkes Solver (URANOS) CPC Library link to program files: https://doi.org/10.17632/pw5hshn9k6.1 Developer's repository link: https://gitlab.com/fralusa/uranos_gpu Licensing provisions: BSD License 2.0 Programming language: Fortran 90, OpenACC, MPI Nature of problem: Solving the compressible Navier-Stokes system of equations in a three-dimensional Cartesian framework from low to high Mach and Reynolds numbers conditions. Solution method: Convective terms are treated with several high-order high-resolution shock-capturing schemes (WENO/TENO) in hybrid and non-hybrid versions. The system dynamics is advanced in time with a three-stage, third-order total variation diminishing Runge-Kutta method. Three-dimensional MPI parallelization is implemented in several optimized arrangements and coupling OpenACC directives in a genuinely multi-GPU logic.}
@@ -23,6 +83,7 @@ Program title: Unsteady Robust All-around Navier-StOkes Solver (URANOS) CPC Libr
 @article{PLACCO2023108709,
 title = {Large-Eddy Simulation of the unsteady supersonic flow around a Mars entry capsule at different angles of attack},
 journal = {Aerospace Science and Technology},
+abbr={AST},
 volume = {143},
 pages = {108709},
 year = {2023},
@@ -34,9 +95,41 @@ keywords = {Large Eddy Simulation, Entry capsule, Unsteady, Supersonic flows, Mo
 abstract = {Time-evolving high-fidelity simulations of an entry capsule in a supersonic flight regime have been performed at different angles of attack (0∘,5∘,10∘ and 15∘) in Mars' atmosphere. The aim is to contribute to the understanding of the critical unsteady phenomena that arise during the descent phase, gaining insights on the optimal design choices to ensure a safe atmospheric entry and a successful landing procedure. Turbulent structures effectively solved via Implicit Large-Eddy Simulation technique allow us to evaluate the flow properties and the capsule's response both in space and time, placing special attention to the analysis of the turbulent motions responsible for the oscillatory and unsteady dynamics. Ultimately, Proper Orthogonal Decomposition is employed to provide a low-order model of the wake dynamics.}
 }
 
-@article{cogo_2023, title={Assessment of heat transfer and Mach number effects on high-speed turbulent boundary layers}, 
+@article{cogo_2023, title={Assessment of heat transfer and Mach number effects on high-speed turbulent boundary layers},
   abbr={JFM},
   volume={974}, DOI={10.1017/jfm.2023.791}, journal={Journal of Fluid Mechanics}, publisher={Cambridge University Press}, author={Cogo, Michele and Baù, Umberto and Chinappi, Mauro and Bernardini, Matteo and Picano, Francesco}, year={2023}, pages={A10}}
+
+@inproceedings{cogo2023ctr,
+  abbr={CTR},
+  title={Inverse-velocity transformation wall model for reacting turbulent hypersonic boundary layers},
+  author={Cogo, Michele and Williams, Christopher T. and Griffin, Kevin P. and Picano, Francesco and Moin, Parviz},
+  booktitle={Center for Turbulence Research, Annual Research Briefs},
+  pages={159--172},
+  year={2023},
+  url={https://web.stanford.edu/group/ctr/ResBriefs/2023/15_Cogo.pdf},
+  html={https://web.stanford.edu/group/ctr/ResBriefs/2023/15_Cogo.pdf},
+  keywords={hypersonic, wall model, chemical reactions, velocity transformation},
+}
+
+@inproceedings{devanna2023aiaa,
+  abbr={AIAA},
+  title={GPU-acceleration of Navier-Stokes solvers for compressible wall-bounded flows: the case of URANOS},
+  author={{De Vanna}, Francesco and Avanzi, Filippo and Cogo, Michele and Sandrin, Simone and Bettencourt, Matt and Picano, Francesco and Benini, Ernesto},
+  booktitle={AIAA SciTech 2023 Forum},
+  year={2023},
+  DOI={10.2514/6.2023-1129},
+  url={https://doi.org/10.2514/6.2023-1129},
+}
+
+@inproceedings{devanna2022aiaa,
+  abbr={AIAA},
+  title={A straightforward strategy to unify WR/WMLES approaches for compressible wall-bounded flows},
+  author={{De Vanna}, Francesco and Cogo, Michele and Bernardini, Matteo and Picano, Francesco and Benini, Ernesto},
+  booktitle={AIAA SciTech 2022 Forum},
+  year={2022},
+  DOI={10.2514/6.2022-0181},
+  url={https://doi.org/10.2514/6.2022-0181},
+}
 
 @article{cogo2022direct,
   abbr={JFM},
@@ -44,11 +137,23 @@ abstract = {Time-evolving high-fidelity simulations of an entry capsule in a sup
   author={Cogo, M. and Salvadore, F. and Picano, F. and Bernardini, M.},
   journal={Journal of Fluid Mechanics},
   volume={945},
+  pages={A30},
   DOI={10.1017/jfm.2022.574},
   year={2022},
   url={https://doi.org/10.1017/jfm.2022.574},
   publisher={Cambridge University Press},
+  selected={true},
   html={https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/direct-numerical-simulation-of-supersonic-and-hypersonic-turbulent-boundary-layers-at-moderatehigh-reynolds-numbers-and-isothermal-wall-condition/F3835ECA31501F1A6E205627FE26589D#article},
+}
+
+@inproceedings{devanna2021wccm,
+  abbr={WCCM},
+  title={A wall-modeled/wall-resolved LES method for turbulent wall flows},
+  author={{De Vanna}, Francesco and Cogo, Michele and Bernardini, Matteo and Picano, Francesco and Benini, Ernesto},
+  booktitle={14th WCCM-ECCOMAS Congress 2020},
+  year={2021},
+  DOI={10.23967/wccm-eccomas.2020.045},
+  url={https://doi.org/10.23967/wccm-eccomas.2020.045},
 }
 
 @article{de2021unified,
@@ -66,5 +171,12 @@ abstract = {Time-evolving high-fidelity simulations of an entry capsule in a sup
   html={https://journals.aps.org/prfluids/abstract/10.1103/PhysRevFluids.6.034614},
 }
 
-
-
+@phdthesis{cogo2025thesis,
+  abbr={PhD},
+  title={High-fidelity simulations of high speed flows for aerospace problems},
+  author={Cogo, Michele},
+  school={Università degli Studi di Padova, CISAS ``Giuseppe Colombo''},
+  year={2025},
+  url={https://hdl.handle.net/11577/3556023},
+  html={https://hdl.handle.net/11577/3556023},
+}

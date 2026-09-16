@@ -1,34 +1,58 @@
-"Adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+# Coauthor names are matched against the author list in _bibliography/papers.bib
+# and rendered as links when a `url` is present. Entries without a `url` render
+# as plain text, so add profile links as you confirm them.
 
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Picano":
+  - firstname: ["Francesco", "F."]
+    url: https://research.dii.unipd.it/flums/
 
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Bernardini":
+  - firstname: ["Matteo", "M."]
 
-"Bach": 
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Modesti":
+  - firstname: ["Davide", "D."]
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Moin":
+  - firstname: ["Parviz", "P."]
 
-"Przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"De Vanna":
+  - firstname: ["Francesco", "F."]
 
-"Schrödinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"Placco":
+  - firstname: ["Luca", "L."]
 
-"Lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"Salvadore":
+  - firstname: ["Francesco", "F."]
 
-"Planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"Benini":
+  - firstname: ["Ernesto", "E."]
+
+"Avanzi":
+  - firstname: ["Filippo", "F."]
+
+"Chinappi":
+  - firstname: ["Mauro", "M."]
+
+"Baù":
+  - firstname: ["Umberto", "U."]
+
+"Depieri":
+  - firstname: ["Davide", "D."]
+
+"Griffin":
+  - firstname: ["Kevin P.", "K. P.", "Kevin"]
+
+"Williams":
+  - firstname: ["Christopher T.", "C. T.", "Christopher"]
+
+"Sandrin":
+  - firstname: ["Simone", "S."]
+
+"Bettencourt":
+  - firstname: ["Matt", "M."]
+
+"Aboudan":
+  - firstname: ["Alessio", "A."]
+
+"Ferri":
+  - firstname: ["Francesca", "F."]
