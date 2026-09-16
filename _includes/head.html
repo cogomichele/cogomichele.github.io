@@ -22,7 +22,14 @@
     {% endif %}
 
     <!-- Styles -->
-    {% if site.icon.size <= 4 %}
+    {% comment %}
+      icon_color is stored without a leading "#": the favicon is a data: URI, and a
+      literal "#" would be parsed as the start of a URL fragment, truncating the SVG.
+      It is written back in below as the escape %23.
+    {% endcomment %}
+    {% if site.icon == 'circle' %}
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2246%22 fill=%22%23{{ site.icon_color | default: '0B5394' }}%22/></svg>">
+    {% elsif site.icon.size <= 4 %}
     <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.icon }}</text></svg>">
     {% elsif site.icon != blank %}
     <link rel="shortcut icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url}}"/>

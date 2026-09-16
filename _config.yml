@@ -16,7 +16,8 @@ footer_text: >
 keywords: computational fluid dynamics, compressible turbulence, hypersonic, turbulent boundary layer, direct numerical simulation, large-eddy simulation, wall modelling, high performance computing, aerodynamics
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: circle  # "circle" draws a filled disc in icon_color; or an emoji; or an image name in /assets/img/
+icon_color: 0B5394  # hex WITHOUT the leading "#" (see the comment in _includes/head.html)
 
 url: https://cogomichele.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
